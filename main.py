@@ -1,0 +1,16 @@
+print('n1=')
+a=float(input())
+print('n2=')
+b=float(input())
+oper_1=a+b
+oper_2=a-b
+oper_3=a*b
+oper_4=a/b
+print('n1+n2=')
+print(oper_1)
+print('n1-n2=')
+print(oper_2)
+print('n1*n2=')
+print(oper_3)
+print('n1/n2=')
+print(oper_4)
