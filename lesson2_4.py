@@ -65,6 +65,6 @@ print('Task 3')
 
 for i in range(min(length_1,length_2,length_3)):
     if tuple_1[i]==tuple_2[i]==tuple_3[i]:
-        print('On ', i ,'th position element there is common element - ', tuple_1[i])
+        print('On ', i ,'th position there is common element - ', tuple_1[i])
     else:
         print('Elements on ', i, 'th position are not equal')
