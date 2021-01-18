@@ -20,7 +20,9 @@ def task_1(amount_of_kids: int) -> list:
     return group_of_kids
 
 class Person:
-    pass
+#    pass
+    def print_info(self):
+        print(f"Name: {self.name}, Surname: {self.surname}, Age: {self.age}")
 #   def __init__(self, name, surname, age):
 #       self.name = name
 #       self.surname = surname
@@ -34,9 +36,9 @@ def task_2(amount_of_kids: int) -> list:
     for i in range(amount_of_kids):
         kid = Person()
         print('Kid ', i+1, ':')
-        kid.name = input('Enter name:')
-        kid.surname = input('Enter surname:')
-        kid.age = input('Enter age:')
+        kid.name = input('Enter name: ')
+        kid.surname = input('Enter surname: ')
+        kid.age = input('Enter age: ')
         group_of_kids.append(kid)
 
     return group_of_kids
@@ -53,5 +55,8 @@ task_2_result = task_2(amount_of_kids=3)
 print('Task 1:')
 pprint(task_1_result)
 print('Task 2:')
-pprint(task_2_result)
+for element in task_2_result:
+    element.print_info()
+
+
 
