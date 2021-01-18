@@ -1,0 +1,10 @@
+group_of_kids = []
+kid = {
+    "name" : "value1",
+    "surname" : "value2",
+    "age" : "value3"
+}
+for i in range(3):
+    group_of_kids.append(kid)
+
+print(group_of_kids)
